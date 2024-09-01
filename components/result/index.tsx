@@ -1,11 +1,9 @@
 'use client'
 import './index.css'
+import Loading from '../loading'
 import React, { useState, useEffect } from 'react'
-import { Document, Page, useDocumentContext, pdfjs } from 'react-pdf'
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url
-).toString()
+import { Document, Page, pdfjs } from 'react-pdf'
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 type OperateProps = {
   scale: number
@@ -110,8 +108,6 @@ const Exhibition: React.FC<ExhibitionProps> = (props) => {
   const [height, setHeight] = useState<number>(baseHeight * scale)
 
   const downloadPDF = () => {
-    console.log()
-
     const link: any = document.createElement('a')
     link.setAttribute('download', fileName)
     link.href = fileUrl
@@ -141,6 +137,7 @@ const Exhibition: React.FC<ExhibitionProps> = (props) => {
         file={fileUrl}
         onLoadSuccess={onDocumentLoadSuccess}
         onLoadError={console.error} //加载失败时调用
+        loading={<Loading />}
         renderMode="canvas"
       >
         <div className="flex flex-wrap justify-center mt-5">
