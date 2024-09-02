@@ -13,32 +13,36 @@ export default function Header() {
           <Image className="w-8" src={logo} alt="logo" />
           <h3 className="font-serif text-xl font-semibold">PDF.ai</h3>
         </div>
-        <div className="flex justify-center items-center">
+        <nav className="flex justify-center items-center">
           <Link
             className="flex justify-center items-center p-2.5 font-lg hover:underline"
             href={'https://pdf.ai/pricing'}
+            rel="nofollow"
           >
             Pricing
           </Link>
           <Link
             className="flex justify-center items-center p-2.5 font-lg hover:underline"
             href={'https://pdf.ai/chrome-extension'}
+            rel="nofollow"
           >
             Chrome extension
           </Link>
           <Link
             className="flex justify-center items-center p-2.5 font-lg hover:underline"
             href={'https://pdf.ai/use-cases'}
+            rel="nofollow"
           >
             Use cases
           </Link>
           <Link
             className="flex justify-center items-center p-2.5 font-lg hover:underline"
             href={'https://pdf.ai/auth/sign-in'}
+            rel="nofollow"
           >
             Get started →
           </Link>
-        </div>
+        </nav>
       </div>
     </header>
   )

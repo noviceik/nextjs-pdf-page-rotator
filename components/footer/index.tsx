@@ -1,5 +1,6 @@
 import favicon from '@/app/favicon.ico'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -13,9 +14,10 @@ export default function Footer() {
               and more.
             </div>
             <div className="flex space-x-6">
-              <a
+              <Link
                 href="https://www.tiktok.com/@pdfai"
                 className="text-gray-400 hover:text-gray-500"
+                rel="nofollow"
                 target="_blank"
               >
                 <span className="sr-only">TikTok</span>
@@ -30,10 +32,11 @@ export default function Footer() {
                 >
                   <path d="M2081 0c55 473 319 755 778 785v532c-266 26-499-61-770-225v995c0 1264-1378 1659-1932 753-356-583-138-1606 1004-1647v561c-87 14-180 36-265 65-254 86-398 247-358 531 77 544 1075 705 992-358V1h551z"></path>
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.instagram.com/pdfdotai/"
                 className="text-gray-400 hover:text-gray-500"
+                rel="nofollow"
                 target="_blank"
               >
                 <span className="sr-only">Instagram</span>
@@ -49,10 +52,11 @@ export default function Footer() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://twitter.com/pdfdotai"
                 className="text-gray-400 hover:text-gray-500"
+                rel="nofollow"
                 target="_blank"
               >
                 <span className="sr-only">Twitter</span>
@@ -64,10 +68,11 @@ export default function Footer() {
                 >
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.youtube.com/@pdfai"
                 className="text-gray-400 hover:text-gray-500"
+                rel="nofollow"
                 target="_blank"
               >
                 <span className="sr-only">YouTube</span>
@@ -83,7 +88,7 @@ export default function Footer() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
@@ -94,68 +99,76 @@ export default function Footer() {
                 </h3>
                 <ul role="list" className="mt-6 space-y-4 list-none p-0">
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="#"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Use cases
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="#"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Chrome extension
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://api.pdf.ai/"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       API docs
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://pdf.ai/pricing"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Pricing
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://pdf.ai/tutorials"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Video tutorials
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://pdf.ai/resources"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Resources
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://pdf.ai/blog"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="/faq"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       FAQ
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -165,68 +178,76 @@ export default function Footer() {
                 </h3>
                 <ul role="list" className="mt-6 space-y-4 list-none p-0">
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://pdf.ai/tools/resume-ai-scanner"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Resume AI Scanner
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://pdf.ai/tools/invoice-ai-scanner"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Invoice AI Scanner
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://pdf.ai/tools/quiz-ai-generator"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       AI Quiz Generator
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://quickyai.com"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       QuickyAI
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://docsium.com"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Docsium
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://pdf.ai/gpts"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       PDF GPTs
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://pdfgen.com"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       PDF AI generator
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="https://pdf.ai/tools"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Other PDF tools
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -236,44 +257,49 @@ export default function Footer() {
                 </h3>
                 <ul role="list" className="mt-6 space-y-4 list-none p-0">
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="#"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       PDF.ai vs ChatPDF
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="#"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       PDF.ai vs Acrobat Reader
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="#"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Legal
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="#"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Affiliate program 💵
-                    </a>
+                    </Link>
                   </li>
                   <li className="p-0 m-0">
-                    <a
+                    <Link
                       href="#"
+                      rel="nofollow"
                       className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                     >
                       Investor
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
